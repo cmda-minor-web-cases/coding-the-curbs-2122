@@ -1,5 +1,5 @@
 # Coding the Curbs
-Disclaimer: deze opdracht betreft een praktijkopdracht voor studenten van de opleiding CMDA Amsterdam (Hogeschool van Amsterdam)
+_Disclaimer: deze opdracht betreft een praktijkopdracht voor studenten van de opleiding CMDA Amsterdam (Hogeschool van Amsterdam)_
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
