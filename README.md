@@ -2,7 +2,7 @@
 _Disclaimer: deze opdracht betreft een praktijkopdracht voor studenten van de opleiding CMDA Amsterdam (Hogeschool van Amsterdam)_
 
 
-![Coding the Curbs](https://github.com/cmda-minor-web-cases/coding-the-curbs/blob/main/assets/coding-the-curbs.jpg?raw=true)
+![Coding the Curbs](https://github.com/cmda-minor-web-cases/coding-the-curbs/blob/main/assets/coding-the-curbs.jpeg?raw=true)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
