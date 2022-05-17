@@ -15,11 +15,13 @@ _Disclaimer: deze opdracht betreft een praktijkopdracht voor studenten van de op
 ## Beschrijving
 Coding the Curbs is een start-up die sinds januari 2020 werkt aan het slimmer maken van de steden. Door de ruimte in een stad te 'coderen' is het mogelijk om plekken diverse functies te laten vervullen op verschillende momenten. Denk daarbij aan een parkeerplek die ruimte biedt voor laden & lossen doordeweeks, en voor terrassen in het weekend, de zogenaamde Smart Zones. Via een web applicatie kunnen gebruikers ter plekke een reservering maken van een Smart Zone.
 
+[Smart Zones in het nieuws](https://nos.nl/regio/utrecht/artikel/264496-utrecht-start-smartzone-voor-laden-en-lossen-in-twijnstraat-en-dubt-nog-over-e-deelstepjes)
+
 ## Opdrachtgever
 Iskandar Tange, Senior strategist bij Fronteer
 
 ## Design challenge
-Ontwerp en ontwikkel het interactieve reserveringsysteem voor Smart Zones in de stad. De applicatie laat een overzicht van Smart Zones in een bepaald gebied zien. En moet het mogelijk maken
+Ontwerp en ontwikkel het interactieve reserveringsysteem voor Smart Zones in de stad. De applicatie laat een overzicht van Smart Zones in een bepaald gebied zien. Via de applicatie moet het mogelijk zijn om reserveringen te doen van Smart Zones. En het moet mogelijke zijn om een lijst met favoriete Smart Zones aan te maken in de applicatie.
 
 ### User stories
 1 Als logistiek vervoerder wil ik een overzicht van beschikbare Smart Zones kunnen zien in een gebied in de stad, zodat ik weet waar ik een bezorging van goederen kan plannen.
