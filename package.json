@@ -1,0 +1,19 @@
+{
+  "name": "coding-the-curbs",
+  "version": "1.0.0",
+  "description": "Coding the curbs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomvandenberg11/coding-the-curbs.git"
+  },
+  "author": "Tim, Fabian, Sietse and Tom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tomvandenberg11/coding-the-curbs/issues"
+  },
+  "homepage": "https://github.com/Tomvandenberg11/coding-the-curbs#readme"
+}
