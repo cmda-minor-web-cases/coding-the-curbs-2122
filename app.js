@@ -54,11 +54,6 @@ function main() {
     const db = connection.db('reservations')
     const reservationsCollection = db.collection('dcderservations')
 
-    console.log('connection!');
-    reservationsCollection.find().toArray()
-    .then(result => {
-      console.log(result);
-    })
     // Create a home route
     app.get('/', (req, res) => {
       res.render('timelist', {
