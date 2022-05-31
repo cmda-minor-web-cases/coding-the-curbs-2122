@@ -2,10 +2,15 @@
 
     <div class="container margin-top30">
         <h1>Manage</h1>
+        <p>Het overzicht van plekken</p>
         <section>
           <% reservationdata.forEach(function(Reservation) { %>
             <li class="managedata">
-              <p><%= Reservation.email %> | <%= Reservation.kenteken %></p>
+              <div>
+                <p><%= Reservation.email %></p>
+                <p>Kenteken: <%= Reservation.kenteken %></p>
+              </div>
+              <p>Om: <%= Reservation.time %></p>
             </li>
             <% });%>
         </section>

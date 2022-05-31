@@ -1,0 +1,34 @@
+<%- include('./components/head.ejs') -%>
+
+<div class="container margin-top30">
+  <h1>Hoelaat wil je hier staan?</h1>
+  <section>
+    <p>Kies maximaal 2 tijden</p>
+    <form action="/addtime" method="post" class="timelistclass" name="checkTime" id="checkTime" novalidate>
+      <input type="checkbox" name="time" id="1315" required hidden disabled>
+      <label for="1315">13:00 - 13:15</label>
+
+      <input type="checkbox" name="time" id="1330" value="13:15 - 13:30" required hidden>
+      <label for="1330">13:15 - 13:30</label>
+
+      <input type="checkbox" name="time" id="1345" value="13:30 - 13:45" required hidden>
+      <label for="1345">13:30 - 13:45</label>
+
+      <input type="checkbox" name="time" id="1400" value="13:45 - 14:00" required hidden>
+      <label for="1400">13:45 - 14:00</label>
+
+      <input type="checkbox" name="time" id="1415" required hidden disabled>
+      <label for="1415">14:00 - 14:15</label>
+
+      <input type="checkbox" name="time" id="1430" required hidden disabled>
+      <label for="1430">14:15 - 14:30</label>
+
+      <input type="checkbox" name="time" id="1445" value="14:30 - 14:45" required hidden>
+      <label for="1445">14:30 - 14:45</label>
+
+      <input type="submit" value="Kies deze tijd(en)">
+    </form>
+  </section>
+</div>
+
+<%- include('./components/footer.ejs') -%>
