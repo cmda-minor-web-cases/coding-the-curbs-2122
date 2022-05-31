@@ -1,4 +1,6 @@
 if (window.location.href.indexOf("timelist") > -1) {
+  document.getElementById('footer-button-1').classList.add('active')
+  document.getElementById('footer-button-2').classList.remove('active')
   const checkBoxLimit = () => {
     var checkBoxGroup = document.forms['checkTime']['time'];			
     var limit = 2;
@@ -27,4 +29,23 @@ if (window.location.href.indexOf("timelist") > -1) {
 
     time.push(fulltime)
   }
+}
+
+if (window.location.href.indexOf("manage") > -1) {
+  document.getElementById('footer-button-2').classList.add('active')
+  document.getElementById('footer-button-1').classList.remove('active')
+
+  // Selecteer alles met het id verwijderButton uit het document en voeg aan elke een EventListener toe met click en de functie verwijderGame
+// document.querySelectorAll('#verwijderButton').forEach(button => button.addEventListener('click', verwijderReservation))
+
+// function verwijderReservation(clickevent) {
+//   // Hier haal je het id op en doe je het in de url, dan pas je de method DELETE toe
+//   fetch('/delete?id=' + clickevent.target.dataset.id, {
+//       method: 'DELETE'
+//     })
+//     .then(response => {
+//       return response.text()
+
+//     })
+// }
 }

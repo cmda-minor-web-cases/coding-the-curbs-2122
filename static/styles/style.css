@@ -113,6 +113,7 @@ footer {
     font-weight: 700;
     color: var(--white);
     border-top: 4px solid transparent;
+    transition: .3s;
 }
 
 .active {
