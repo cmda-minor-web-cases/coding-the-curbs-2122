@@ -3,6 +3,8 @@
     --white: #ffffff;
     --blue: #4f52c9;
     --lightblue: #59ffec;
+    --rajdhani: 'Rajdhani', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 }
 
 * {
@@ -35,7 +37,15 @@ header img {
     max-width: 1000px;
 }
 
+h1 {
+    font-family: var(--rajdhani);
+}
+
 /*  MARGINS  */
+
+.margin-top30 {
+    margin-top: 30px;
+}
 
 .margin-top50 {
     margin-top: 50px;
