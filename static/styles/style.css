@@ -121,3 +121,8 @@ footer {
 .margin-top50 {
     margin-top: 50px;
 }
+
+.managedata {
+    list-style: none;
+    font-family: var(--roboto);
+}
