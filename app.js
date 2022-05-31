@@ -2,6 +2,8 @@ const express = require('express')
 // const fetch = require('node-fetch')
 const app = express()
 const compression = require('compression')
+const bodyParser = require('body-parser')
+app.use(bodyParser());
 const port = process.env.PORT || 1234
 
 const MongoClient = require('mongodb').MongoClient
@@ -73,7 +75,16 @@ function main() {
         });
       })
     })
+
+    app.post('/reserve', (req, res) => {
+      reservationsCollection.insertOne(req.body)
+        .then(result => {
+          res.redirect('/manage')
+        })
+        .catch(error => console.error(error))
+    })
   })
+
 }
 
 // Offline page
