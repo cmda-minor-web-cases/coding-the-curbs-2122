@@ -1,0 +1,15 @@
+<%- include('./components/head.ejs') -%>
+
+    <div class="container margin-top30">
+        <h1>Manage</h1>
+        <section>
+          <% reservationdata.forEach(function(Reservation) { %>
+            <li class="managedata">
+              <p><%= Reservation.email %> | <%= Reservation.kenteken %></p>
+            </li>
+            <% });%>
+        </section>
+    </div>
+
+<%- include('./components/footer.ejs') -%>
+
