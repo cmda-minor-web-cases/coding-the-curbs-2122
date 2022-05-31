@@ -80,6 +80,13 @@ header img {
     font-family: var(--rajdhani);
     font-weight: 700;
     margin-top: 30px;
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.container form input[type=submit]:active {
+    transform: scale(.96);
+    transition: all .2s;
 }
 
 footer {
