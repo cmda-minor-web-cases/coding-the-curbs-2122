@@ -46,6 +46,7 @@ function main() {
   .then(connection => {
 
     let Reservation = {
+      time: '',
       email: '',
       kenteken: ''
     }
@@ -60,7 +61,7 @@ function main() {
     })
     // Create a home route
     app.get('/', (req, res) => {
-      res.render('index', {
+      res.render('timelist', {
         title: 'Coding the Curbs'
       });
     })
@@ -83,8 +84,21 @@ function main() {
         })
         .catch(error => console.error(error))
     })
-  })
 
+    app.get('/timelist', (req, res) => {
+      res.render('timelist', {
+        title: 'Timelist'
+      })
+    })
+
+    app.post('/addtime', (req, res) => {
+          res.render('index', {
+            title: 'Coding the Curbs',
+            time: req.body.time
+          })
+    })
+
+  })
 }
 
 // Offline page

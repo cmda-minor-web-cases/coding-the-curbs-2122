@@ -125,4 +125,56 @@ footer {
 .managedata {
     list-style: none;
     font-family: var(--roboto);
+    margin: 1rem 0;
+    background: #ededed;
+    padding: .5rem;
+}
+
+.managedata > div {
+    width: 100%;
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.managedata > div p{
+    width: 50%;
+}
+
+.managedata > div > p:last-of-type{
+    text-align: right;
+}
+
+.managedata > p {
+    width: 100%;
+}
+
+.timelistclass {
+    transition: .3s;
+}
+
+.timelistclass input:checked + label {
+    background-color: var(--lightblue);
+}
+
+.timelistclass input:disabled + label {
+    background-color: #c3c3c3;
+    opacity: .7;
+}
+
+.timelistclass input:disabled {
+    transform: scale(.95);
+    opacity: .6;
+}
+
+section .timelistclass label {
+    width: 100%;
+    height: 3rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-weight: 900;
 }

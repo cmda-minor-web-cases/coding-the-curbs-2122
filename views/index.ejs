@@ -1,9 +1,12 @@
 <%- include('./components/head.ejs') -%>
 
     <div class="container margin-top30">
-        <h1>Reserveer smart zone </h1>
+        <h1>Reserveer smart zone van <%= time %></h1>
         <p>Reserveer hier je smartzone, zodat je niet meer hoeft te wachten!</p>
         <form action="/reserve" method="POST">
+
+            <input type="text" name="time" value="<%= time %>" hidden>
+
             <label>Je nummerbord</label>
             <input type="text" maxlength="8" name="kenteken" required>
 

@@ -5,7 +5,11 @@
         <section>
           <% reservationdata.forEach(function(Reservation) { %>
             <li class="managedata">
-              <p><%= Reservation.email %> | <%= Reservation.kenteken %></p>
+              <div>
+                <p><%= Reservation.email %></p>
+                <p>Kenteken: <%= Reservation.kenteken %></p>
+              </div>
+              <p>Om: <%= Reservation.time %></p>
             </li>
             <% });%>
         </section>
