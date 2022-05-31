@@ -4,10 +4,14 @@ const app = express()
 const compression = require('compression')
 const port = process.env.PORT || 1234
 
+const MongoClient = require('mongodb').MongoClient
+// const ObjectID = require('mongodb').ObjectID
+
 require('dotenv').config({path: '.env-dev'})
 
 const {
-  API_KEY
+  API_KEY,
+  MONGO_PASS
 } = process.env
 
 // Link the templating engine to the express app
@@ -25,14 +29,52 @@ app.use(/.*-[0-9a-f]{10}\..*/, (req, res, next) => {
 app.use(express.static('static'))
 app.use(compression())
 
-// Create a home route
-app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Coding the Curbs'
-  });
-})
+// Main function aan roepen
+main()
 
+// Connectie maken met de database
+function main() {
+  MongoClient
+    // Maakt de connectie met de database
+    .connect(`mongodb+srv://codingthecurbsminor2022:${MONGO_PASS}@codingthecurbs.ln7wtad.mongodb.net/?retryWrites=true&w=majority`, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
 
+  .then(connection => {
+
+    let Reservation = {
+      email: '',
+      kenteken: ''
+    }
+    
+    const db = connection.db('reservations')
+    const reservationsCollection = db.collection('dcderservations')
+
+    console.log('connection!');
+    reservationsCollection.find().toArray()
+    .then(result => {
+      console.log(result);
+    })
+    // Create a home route
+    app.get('/', (req, res) => {
+      res.render('index', {
+        title: 'Coding the Curbs'
+      });
+    })
+
+    app.get('/manage', (req, res) => {
+      reservationsCollection.find().toArray()
+      .then(results => {
+        res.render('manage', {
+          title: 'Manage your reservation',
+          reservationdata: results,
+          data: Reservation
+        });
+      })
+    })
+  })
+}
 
 // Offline page
 app.get('/offline', (req, res) => {
@@ -42,5 +84,5 @@ app.get('/offline', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port http://localhost:${port}`)
 })
