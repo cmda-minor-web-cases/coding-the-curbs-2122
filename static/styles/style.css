@@ -2,6 +2,7 @@
     --black: #000000;
     --white: #ffffff;
     --blue: #4f52c9;
+    --purple: #524dd0;
     --lightblue: #59ffec;
     --rajdhani: 'Rajdhani', sans-serif;
     --roboto: 'Roboto', sans-serif;
@@ -73,15 +74,28 @@ header img {
 }
 
 .container form input[type=submit] {
+    background-color: var(--purple);
+    color: var(--white);
+    border-color: var(--blue);
+    border-width: 3px;
+    font-family: var(--rajdhani);
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: all .2s;
+    width: fit-content;
+}
+
+.container form input[type=submit]:hover {
     background-color: var(--white);
     color: var(--blue);
     border-color: var(--blue);
     border-width: 3px;
     font-family: var(--rajdhani);
     font-weight: 700;
-    margin-top: 30px;
-    transform: scale(1);
-    transition: all .2s;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .container form input[type=submit]:active {
