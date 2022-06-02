@@ -200,3 +200,9 @@ section .timelistclass label {
     color: var(--blue);
     font-weight: 900;
 }
+
+.scrollable {
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
