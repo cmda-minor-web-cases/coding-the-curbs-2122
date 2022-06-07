@@ -1,4 +1,4 @@
-if (window.location.href.indexOf("timelist") > -1) {
+// if (window.location.href.indexOf("timelist") > -1) {
   document.getElementById('footer-button-1').classList.add('active')
   document.getElementById('footer-button-2').classList.remove('active')
   const checkBoxLimit = () => {
@@ -29,7 +29,7 @@ if (window.location.href.indexOf("timelist") > -1) {
 
     time.push(fulltime)
   }
-}
+// }
 
 if (window.location.href.indexOf("manage") > -1) {
   document.getElementById('footer-button-2').classList.add('active')
