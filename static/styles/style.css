@@ -82,6 +82,7 @@ header img {
     margin-top: 30px;
     transform: scale(1);
     transition: all .2s;
+    margin-bottom: 50px;
 }
 
 .container form input[type=submit]:active {
