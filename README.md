@@ -15,6 +15,8 @@
 
 
 ## Beschrijving
+Coding the Curbs is een start-up die sinds januari 2020 werkt aan het slimmer maken van de steden. Door de ruimte in een stad te 'coderen' is het mogelijk om plekken diverse functies te laten vervullen op verschillende momenten. Denk daarbij aan een parkeerplek die ruimte biedt voor laden & lossen doordeweeks, en voor terrassen in het weekend, de zogenaamde Smart Zones. Via een mobiele en webapplicatie kunnen gebruikers ter plekke een reservering maken van een Smart Zone. Op die manier kunnen ze onder het vooraf gereserveerde tijdstip gebruik maken van deze ruimte. Bij de Smart Zone is er een Smart Sign (digitaal scherm) aanwezig die de huidige reserveringen en informatie laat zien.
+
 
 ## Poster
 
@@ -29,7 +31,7 @@ Je kan de website bekijken op de link hierboven. Al wil je zelf aan het project 
 ## Checklist
 
 ## Auteurs 
-De makers van dit project zijn [Sietse Roos](https://github.com/sietse333) punt
+De makers van dit project zijn: [Tim de Roller](https://github.com/maggness), [Tom Van den berg](https://github.com/Tomvandenberg11), [Fabian Vis](https://github.com/fabian-vis) en  [Sietse Roos](https://github.com/sietse333).
 
 
 ## Licentie

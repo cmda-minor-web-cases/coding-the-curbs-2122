@@ -63,6 +63,7 @@ header img {
     margin: 0 auto;
     font-family: var(--roboto);
     font-weight: 300;
+    margin-top: 1em;
 }
 
 .container form label {
@@ -85,14 +86,14 @@ header img {
     font-family: var(--rajdhani);
     font-weight: 700;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
     transform: scale(1);
     transition: all .2s;
     margin-bottom: 50px;
     width: fit-content;
 }
 
-.container form input[type=submit]:hover {
+.container form input[type=submit]:hover:enabled {
     background-color: var(--white);
     color: var(--blue);
     border-color: var(--blue);
@@ -100,10 +101,10 @@ header img {
     font-family: var(--rajdhani);
     font-weight: 700;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
-.container form input[type=submit]:active {
+.container form input[type=submit]:active:enabled {
     transform: scale(.96);
     transition: all .2s;
 }
@@ -258,4 +259,9 @@ section .timelistclass label {
     align-content: center;
     align-items: center;
     padding-top: 5vh;
+
+.container article {
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
 }
