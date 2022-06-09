@@ -42,14 +42,3 @@ if (window.location.href.indexOf("manage") > -1) {
   document.getElementById('footer-button-2').classList.add('active')
   document.getElementById('footer-button-1').classList.remove('active')
 }
-
-startTime()
-
-function startTime() {
-  var today = new Date();
-  var time = today.getHours() + ":" + today.getMinutes();
-  console.log(time);
-  setTimeout(function () {
-    startTime()
-  }, 10000);
-}

@@ -1,14 +1,21 @@
 <%- include('./components/head.ejs') -%>
+<script src="/js/timeChecker.js" defer></script>
 
     <div class="container margin-top30">
         <h1>Wil je nu of later reserveren?</h1>
         <p>Keuzes, keuzes, keuzes...</p>
-        <a href="" class="button_select">
-          <p>Nu reserveren</p>
-        </a>
-        <a href="" class="button_select">
-            <p>Latere tijd kiezen</p>
-        </a>
+        <div class="tijdkiezen">
+          <!-- <a href="">
+            <p class="button_select">Reserveer <span id="tijdlatenzien"></span> voor 15 minuten</p>
+          </a> -->
+          <form action="/addtime" method="post" name="checkTime" id="checkTime" novalidate>
+            <input type="checkbox" name="time" id="tijdnu" placeTimevalue required hidden checked value="">
+          <input class="button_select" tijdlatenzienbutton type="submit" value="">
+        </form>
+          <a href="/timelist">
+              <p class="button_select2">Later of langere tijd kiezen</p>
+          </a>
+        </div>
     </div>
 
 <%- include('./components/footer.ejs') -%>

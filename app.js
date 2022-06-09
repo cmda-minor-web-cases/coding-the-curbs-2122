@@ -62,16 +62,16 @@ app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
 })
 
-// var MapboxClient = require('mapbox');
+// // var MapboxClient = require('mapbox');
 
-var client = new MapboxClient(`${GEO_TOKEN}`);
+// var client = new MapboxClient(`${GEO_TOKEN}`);
 
-client.geocodeForward('Chester, NJ')
-  .then(function(res) {
-    // res is the http response, including: status, headers and entity properties
-    var data = res.entity; // data is the geocoding result as parsed JSON
-    console.log(data);
-  })
-  .catch(function(err) {
-    // handle errors
-  });
+// client.geocodeForward('Chester, NJ')
+//   .then(function(res) {
+//     // res is the http response, including: status, headers and entity properties
+//     var data = res.entity; // data is the geocoding result as parsed JSON
+//     console.log(data);
+//   })
+//   .catch(function(err) {
+//     // handle errors
+//   });
