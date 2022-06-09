@@ -3,4 +3,5 @@ export const addTimeRoute = async (req, res) =>{
     title: 'Coding the Curbs',
     time: req.body.time
   })
+  console.log(req.body.time);
 }
