@@ -9,6 +9,7 @@ import { verifyCodeRoute } from "./routes/verifyCode.js";
 import { offlineRoute } from "./routes/offline.js";
 import {checkVerifyRoute} from "./routes/checkverify.js";
 import { noworlater } from './routes/noworlater.js';
+import { successfulRoute } from './routes/successful.js';
 
 export const router = express.Router()
 
@@ -22,5 +23,5 @@ router
   .post('/verifyCode', verifyCodeRoute)
   .post('/checkVerify', checkVerifyRoute)
   .get('/offline', offlineRoute)
-  .get('/offline', offlineRoute)
   .get('/noworlater', noworlater)
+  .get('/successful', successfulRoute)
