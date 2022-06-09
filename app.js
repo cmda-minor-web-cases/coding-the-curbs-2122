@@ -43,17 +43,17 @@ export let Reservation = {
   kenteken: ''
 }
 
-  MongoClient
-    // Maakt de connectie met de database
-    .connect(`mongodb+srv://codingthecurbsminor2022:${MONGO_PASS}@codingthecurbs.ln7wtad.mongodb.net/?retryWrites=true&w=majority`, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+MongoClient
+  // Maakt de connectie met de database
+  .connect(`mongodb+srv://codingthecurbsminor2022:${MONGO_PASS}@codingthecurbs.ln7wtad.mongodb.net/?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
 
-    .then(connection => {
-      const db = connection.db('reservations')
-      reservationsCollection = db.collection('dcderservations')
-    })
+  .then(connection => {
+    const db = connection.db('reservations')
+    reservationsCollection = db.collection('dcderservations')
+  })
 
 
 app.listen(port, () => {
