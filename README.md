@@ -29,7 +29,7 @@ Je kan de website bekijken op de link hierboven. Al wil je zelf aan het project 
 ## Checklist
 
 ## Auteurs 
-De makers van dit project zijn: [Tim de Roller](https://github.com/maggness) [Tom Van den berg](https://github.com/Tomvandenberg11) [Fabian Vis](https://github.com/fabian-vis)  [Sietse Roos](https://github.com/sietse333) 
+De makers van dit project zijn: [Tim de Roller](https://github.com/maggness), [Tom Van den berg](https://github.com/Tomvandenberg11), [Fabian Vis](https://github.com/fabian-vis),  [Sietse Roos](https://github.com/sietse333).
 
 
 ## Licentie
