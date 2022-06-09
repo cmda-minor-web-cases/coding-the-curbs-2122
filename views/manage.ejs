@@ -4,15 +4,15 @@
         <h1>Manage</h1>
         <p>Het overzicht van plekken</p>
         <section>
-          <% reservationdata.forEach(function(Reservation) { %>
-            <li class="managedata">
-              <div>
-                <p><%= Reservation.email %></p>
-                <p>Kenteken: <%= Reservation.kenteken %></p>
-              </div>
-              <p>Om: <%= Reservation.time %></p>
-            </li>
-            <% });%>
+            <ul>
+                <li class="managedata">
+                  <div>
+                    <p><%= reservation.email %></p>
+                    <p>Kenteken: <%= reservation.kenteken %></p>
+                  </div>
+                  <p>Om: <%= reservation.time %></p>
+                </li>
+            </ul>
         </section>
     </div>
 

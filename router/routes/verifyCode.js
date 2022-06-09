@@ -5,7 +5,7 @@ export const verifyCodeRoute = async (req, res) => {
   const plate = req.body.kenteken
   Mailer(email, plate)
 
-  res.render("timelist", {
+  res.render("checkVerify", {
     title: "Verifieer je kenteken"
   })
 }

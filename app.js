@@ -40,7 +40,8 @@ export let reservationsCollection
 export let Reservation = {
   time: '',
   email: '',
-  kenteken: ''
+  kenteken: '',
+  code: ''
 }
 
 MongoClient
@@ -49,11 +50,11 @@ MongoClient
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-
   .then(connection => {
     const db = connection.db('reservations')
     reservationsCollection = db.collection('dcderservations')
   })
+
 
 
 app.listen(port, () => {
