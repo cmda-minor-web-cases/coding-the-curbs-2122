@@ -18,5 +18,5 @@ router
   .post('/addTime', addTimeRoute)
   .post('/reserve', reserveRoute)
   .get('/timeList', timeListRoute)
-  .get('/verifyCode', verifyCodeRoute)
+  .post('/verifyCode', verifyCodeRoute)
   .get('/offline', offlineRoute)
