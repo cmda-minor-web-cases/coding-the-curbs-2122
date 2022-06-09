@@ -259,6 +259,7 @@ section .timelistclass label {
     align-content: center;
     align-items: center;
     padding-top: 5vh;
+}
 
 .container article {
     max-width: 500px;
