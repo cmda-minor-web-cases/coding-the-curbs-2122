@@ -2,12 +2,12 @@ import express from 'express'
 
 import { homeRoute } from "./routes/home.js";
 import { verifyRoute } from "./routes/verify.js";
-import { manageRoute } from "./routes/manage.js";
 import { addTimeRoute } from "./routes/addTime.js";
-import { reserveRoute } from "./routes/reserve.js";
+import { reservationRoute } from "./routes/reservation.js";
 import { timeListRoute } from "./routes/timelist.js";
 import { verifyCodeRoute } from "./routes/verifyCode.js";
 import { offlineRoute } from "./routes/offline.js";
+import {checkVerifyRoute} from "./routes/checkverify.js";
 import { noworlater } from './routes/noworlater.js';
 
 export const router = express.Router()
@@ -15,10 +15,12 @@ export const router = express.Router()
 router
   .get('/', homeRoute)
   .get('/verify', verifyRoute)
-  .get('/manage', manageRoute)
+  .get('/manage', checkVerifyRoute)
   .post('/addTime', addTimeRoute)
-  .post('/reserve', reserveRoute)
+  .post('/reservation', reservationRoute)
   .get('/timeList', timeListRoute)
   .post('/verifyCode', verifyCodeRoute)
+  .post('/checkVerify', checkVerifyRoute)
+  .get('/offline', offlineRoute)
   .get('/offline', offlineRoute)
   .get('/noworlater', noworlater)
