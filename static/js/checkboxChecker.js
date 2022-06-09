@@ -1,6 +1,9 @@
 // if (window.location.href.indexOf("timelist") > -1) {
-document.getElementById('footer-button-1').classList.add('active')
-document.getElementById('footer-button-2').classList.remove('active')
+var footerButton1 = document.getElementById('footer-button-1')
+var footerButton2 = document.getElementById('footer-button-2')
+
+footerButton1.classList.add('active')
+footerButton2.classList.remove('active')
 
 const checkBoxLimit = () => {
   var checkBoxGroup = document.forms['checkTime']['time']
@@ -43,6 +46,6 @@ const addTimeDB = () => {
 // }
 
 if (window.location.href.indexOf("manage") > -1) {
-  document.getElementById('footer-button-2').classList.add('active')
-  document.getElementById('footer-button-1').classList.remove('active')
+  footerButton1.classList.add('active')
+  footerButton2.classList.remove('active')
 }
