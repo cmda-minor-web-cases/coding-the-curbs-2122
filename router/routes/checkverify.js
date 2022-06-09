@@ -10,13 +10,13 @@ export const checkVerifyRoute = async (req, res) => {
           .filter( key => predicate(obj[key]) )
           .map( key => ({ [key]: obj[key] }) ) )
 
-      console.log(code)
-      const filtered = result.filter(result, item => item.code === code)
+      let filtered = result.filter(result, item => item.code === code)
+      filtered = filtered[Object.keys(filtered)[0]]
       console.log(filtered)
 
       res.render('manage', {
         title: 'Manage your reservation',
-        reservation: filtered[0],
+        reservation: filtered,
       })
     })
 }

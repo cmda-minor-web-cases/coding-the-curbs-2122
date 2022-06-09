@@ -37,8 +37,10 @@ const Mailer = (email, plate) => {
           .filter( key => predicate(obj[key]) )
           .map( key => ({ [key]: obj[key] }) ) )
 
-      const filtered = allReservations.filter(allReservations, item => item.email === userMail && item.kenteken === userPlate)
-      userCode = filtered[0].code
+      let filtered = allReservations.filter(allReservations, item => item.email === userMail && item.kenteken === userPlate)
+      filtered = filtered[Object.keys(filtered)[0]]
+
+      userCode = filtered.code
     })
     .then(() => {
       const mailOptions = {
