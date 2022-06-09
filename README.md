@@ -19,13 +19,17 @@
 ## Poster
 
 ## Live demo
+https://coding-the-curbs.herokuapp.com/
 
 ## Installatie
+Je kan de website bekijken op de link hierboven. Al wil je zelf aan het project  werken moet je deze repository clonen en npm install in de terminal uitvoeren. Verder heb je ook de .env keys nodig.
 
 ## Gebruikershandleiding en functies
 
 ## Checklist
 
 ## Auteurs 
+De makers van dit project zijn [Sietse Roos](https://github.com/sietse333) punt
+
 
 ## Licentie
