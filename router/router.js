@@ -8,6 +8,7 @@ import { reserveRoute } from "./routes/reserve.js";
 import { timeListRoute } from "./routes/timelist.js";
 import { verifyCodeRoute } from "./routes/verifyCode.js";
 import { offlineRoute } from "./routes/offline.js";
+import { noworlater } from './routes/noworlater.js';
 
 export const router = express.Router()
 
@@ -20,3 +21,4 @@ router
   .get('/timeList', timeListRoute)
   .post('/verifyCode', verifyCodeRoute)
   .get('/offline', offlineRoute)
+  .get('/noworlater', noworlater)
