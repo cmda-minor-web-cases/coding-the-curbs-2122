@@ -93,7 +93,7 @@ header img {
     width: fit-content;
 }
 
-.container form input[type=submit]:hover {
+.container form input[type=submit]:hover:enabled {
     background-color: var(--white);
     color: var(--blue);
     border-color: var(--blue);
@@ -104,7 +104,7 @@ header img {
     margin-top: 40px;
 }
 
-.container form input[type=submit]:active {
+.container form input[type=submit]:active:enabled {
     transform: scale(.96);
     transition: all .2s;
 }
