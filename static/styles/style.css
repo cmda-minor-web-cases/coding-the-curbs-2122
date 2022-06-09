@@ -100,7 +100,7 @@ header img {
     font-family: var(--rajdhani);
     font-weight: 700;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .container form input[type=submit]:active {
