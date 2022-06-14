@@ -281,3 +281,12 @@ section .timelistclass label {
     top: 70px;
     left: 0;
 }
+
+.container .maptestbutton {
+    background-color: white;
+    position: fixed;
+    bottom: 70px;
+    width: 10em;
+    height: 4em;
+    z-index: 100;
+}
