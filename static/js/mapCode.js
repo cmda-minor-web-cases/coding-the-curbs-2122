@@ -1,4 +1,6 @@
-	// TO MAKE THE MAP APPEAR YOU MUST
+let colormarker = 'green'
+
+// TO MAKE THE MAP APPEAR YOU MUST
 	// ADD YOUR ACCESS TOKEN FROM
 	// https://account.mapbox.com
 	mapboxgl.accessToken = 'pk.eyJ1IjoidG9tdmRiMTEiLCJhIjoiY2w0NWliMHBpMDEwODNjcGJ3aDc3OGYzeSJ9.x8AbcVT7uoUfCbjuVZq--w';
@@ -15,6 +17,6 @@ zoom: 12
 // .addTo(map);
  
 // Create a default Marker, colored black, rotated 45 degrees.
-const marker2 = new mapboxgl.Marker({ color: '#4f52c9', rotation: 10 })
+const marker2 = new mapboxgl.Marker({ color: colormarker, rotation: 10 })
 .setLngLat([5.133306556029083,52.08566089364163])
 .addTo(map);
