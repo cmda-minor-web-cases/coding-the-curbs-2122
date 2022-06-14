@@ -33,6 +33,7 @@ import {
 import {
   deleteRoute
 } from './routes/deleteRoute.js';
+import { mapRoute } from './routes/map.js';
 
 export const router = express.Router()
 
@@ -49,3 +50,5 @@ router
   .get('/noworlater', noworlater)
   .get('/successful', successfulRoute)
   .post('/delete', deleteRoute)
+  .get('/map', mapRoute)
+
