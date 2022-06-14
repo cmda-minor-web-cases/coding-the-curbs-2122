@@ -10,6 +10,7 @@ import { offlineRoute } from "./routes/offline.js";
 import {checkVerifyRoute} from "./routes/checkverify.js";
 import { noworlater } from './routes/noworlater.js';
 import { successfulRoute } from './routes/successful.js';
+import { mapRoute } from './routes/map.js';
 
 export const router = express.Router()
 
@@ -25,3 +26,4 @@ router
   .get('/offline', offlineRoute)
   .get('/noworlater', noworlater)
   .get('/successful', successfulRoute)
+  .get('/map', mapRoute)

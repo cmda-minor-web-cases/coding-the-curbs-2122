@@ -3,8 +3,8 @@ import express from 'express'
 const app = express()
 import compression from 'compression'
 import bodyParser from 'body-parser'
-import MongoClient from'mongodb'
-import MapboxClient from 'mapbox'
+import MongoClient from 'mongodb'
+// import MapboxClient from 'mapbox'
 
 import * as dotenv from 'dotenv';
 import 'dotenv/config.js';
@@ -62,8 +62,6 @@ MongoClient
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
 })
-
-// // var MapboxClient = require('mapbox');
 
 // var client = new MapboxClient(`${GEO_TOKEN}`);
 
