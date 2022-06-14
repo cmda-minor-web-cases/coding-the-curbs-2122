@@ -1,20 +1,25 @@
 <%- include('./components/head.ejs') -%>
 
-    <div class="container margin-top30">
-        <h1>Manage</h1>
-        <p>Het overzicht van plekken</p>
-        <section>
-            <ul>
-                <li class="managedata">
-                  <div>
-                    <p><%= reservation.email %></p>
-                    <p>Kenteken: <%= reservation.kenteken %></p>
-                  </div>
-                  <p>Om: <%= reservation.time %></p>
-                </li>
-            </ul>
-        </section>
-    </div>
+<div class="container margin-top30">
+  <h1>Manage</h1>
+  <% if (reservation.time) { %>
+  <p>Het overzicht van plekken</p>
+  <section>
+    <ul>
+      <li class="managedata">
+        <div>
+          <form action="/delete" method="post" class="timelistclass" name="checkTime" id="checkTime">
+            <p><%= reservation.email %></p>
+            <p>Kenteken: <%= reservation.kenteken %></p>
+            <input type="number" name="code" value="<%= reservation.code %>" hidden>
+        </div>
+        <p>Om: <%= reservation.time %></p>
+        <input type="submit" value="Verwijder" id="btn">
+        </form>
+      </li>
+    </ul>
+  </section>
+  <%} else {%> <h1>Het is rustig hier ...</h1> <%}%>
+</div>
 
 <%- include('./components/footer.ejs') -%>
-
