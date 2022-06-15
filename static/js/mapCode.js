@@ -9,7 +9,7 @@ let colormarker = 'green'
 	container: 'map',
 	style: 'mapbox://styles/mapbox/navigation-night-v1',
 	center: [5.133306556029083,52.08566089364163],
-	zoom: 12
+	zoom: 12.5
 	});
 	
 	// // Create a default Marker and add it to the map.
