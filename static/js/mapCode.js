@@ -8,7 +8,7 @@ let colormarker = 'green'
 	const map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/navigation-night-v1',
-	center: [5.133306556029083,52.08566089364163],
+	center: [5.123448523735618,52.082773415719515],
 	zoom: 12.5
 	});
 	
@@ -19,7 +19,7 @@ let colormarker = 'green'
 const updateMap = () => {
 	// Create a default Marker, colored black, rotated 45 degrees.
 	const marker2 = new mapboxgl.Marker({ color: colormarker, rotation: 10 })
-	.setLngLat([5.133306556029083,52.08566089364163])
+	.setLngLat([5.123448523735618,52.082773415719515])
 	.addTo(map);
 }
 
