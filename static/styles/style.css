@@ -290,3 +290,14 @@ section .timelistclass label {
     height: 4em;
     z-index: 100;
 }
+
+
+
+@media only screen and (max-width: 425px) {
+  #mainbutton{
+    font-size: 4vw;
+  }
+  #mainbutton2{
+    font-size: 4vw;
+  }
+}
