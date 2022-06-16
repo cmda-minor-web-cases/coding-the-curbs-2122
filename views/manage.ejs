@@ -8,13 +8,15 @@
     <ul>
       <li class="managedata">
         <div>
-          <form action="/delete" method="post" class="timelistclass" name="checkTime" id="checkTime">
+          <form action="/delete" method="post" class="managePage" name="checkTime" id="checkTime">
             <p><%= reservation.email %></p>
             <p>Kenteken: <%= reservation.kenteken %></p>
             <input type="number" name="code" value="<%= reservation.code %>" hidden>
         </div>
-        <p>Om: <%= reservation.time %></p>
-        <input type="submit" value="Verwijder" id="btn">
+        <div>
+          <p>Om: <%= reservation.time %></p>
+          <input type="submit" value="Verwijder" id="verwijderBtn">
+        </div>
         </form>
       </li>
     </ul>
