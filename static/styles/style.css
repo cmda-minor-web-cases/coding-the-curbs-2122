@@ -159,26 +159,27 @@ footer {
   padding: 0.5rem;
 }
 
-.managedata > div {
+.managedata > div:nth-of-type(1) {
   width: 100%;
-  display: flex;
   margin: 0.5rem 0;
 }
 
-.managedata > div p {
-  width: 50%;
-}
-
-.managedata > div > p:last-of-type {
-  text-align: right;
-}
-
-.managedata > p {
+.managedata > div:nth-of-type(2) {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.managedata > div:nth-of-type(2) p {
+  padding-top: 0.5em;
 }
 
 .timelistclass {
   transition: 0.3s;
+}
+
+.managePage {
+  margin: 0 !important;
 }
 
 .timelistclass input:checked + label {
@@ -289,4 +290,31 @@ section .timelistclass label {
     width: 10em;
     height: 4em;
     z-index: 100;
+}
+
+#verwijderBtn {
+  background-color: var(--purple);
+    color: var(--white);
+    border: 3px solid var(--black);
+    border-width: 3px;
+    font-family: var(--rajdhani);
+    font-weight: 700;
+    transform: scale(1);
+    transition: all 0.2s;
+    width: fit-content;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    text-decoration: none; */
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: var(--blue);
+}
+
+#verwijderBtn:hover {
+  background-color: #ededed;
+  color: var(--blue);
+  border-color: var(--blue);
+  border-width: 3px;
+  font-family: var(--rajdhani);
+  font-weight: 700;
 }
