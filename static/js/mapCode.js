@@ -18,7 +18,6 @@ const map = new mapboxgl.Map({
 });
 
 // https://bl.ocks.org/chriswhong/8977c0d4e869e9eaf06b4e9fda80f3ab used for marker code
-
 class ClickableMarker extends mapboxgl.Marker {
   // new method onClick, sets _handleClick to a function you pass in
   onClick(handleClick) {
