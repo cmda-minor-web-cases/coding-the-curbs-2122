@@ -1,9 +1,8 @@
-// if (window.location.href.indexOf("timelist") > -1) {
-var footerButton1 = document.getElementById('footer-button-1')
-var footerButton2 = document.getElementById('footer-button-2')
-
-footerButton1.classList.add('active')
-footerButton2.classList.remove('active')
+// var footerButton1 = document.getElementById('footer-button-1')
+// var footerButton2 = document.getElementById('footer-button-2')
+// console.log(footerButton1);
+// footerButton1.classList.add('active')
+// footerButton2.classList.remove('active')
 
 const checkBoxLimit = () => {
   var checkBoxGroup = document.forms['checkTime']['time']
@@ -45,7 +44,16 @@ const addTimeDB = () => {
 }
 // }
 
-if (window.location.href.indexOf("manage") > -1) {
-  footerButton1.classList.add('active')
-  footerButton2.classList.remove('active')
-}
+// if (window.location.href.indexOf("manage") > -1) {
+//   footerButton1.classList.add('active')
+//   footerButton2.classList.remove('active')
+// }
+
+// var sPath = window.location.pathname;
+// var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+// console.log(sPage);
+// if (sPage == "index.php") {
+
+// } else if (sPage == "contact.php") {
+
+// }

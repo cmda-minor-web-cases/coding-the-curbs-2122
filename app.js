@@ -8,7 +8,9 @@ import MongoClient from 'mongodb'
 
 import * as dotenv from 'dotenv';
 import 'dotenv/config.js';
-import { router } from './router/router.js';
+import {
+  router
+} from './router/router.js';
 
 
 // SETTINGS GLOBAL VARIABLES
