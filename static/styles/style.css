@@ -329,3 +329,13 @@ section .timelistclass label {
   font-family: var(--rajdhani);
   font-weight: 700;
 }
+
+
+@media only screen and (max-width: 425px) {
+  #mainbutton{
+    font-size: 4vw;
+  }
+  #mainbutton2{
+    font-size: 4vw;
+  }
+}
