@@ -37,9 +37,3 @@ Relevante informatie over Smart Zones is via een API te ontsluiten.
 In de eerste week van de meesterproef is een briefing met de opdrachtgever en begeleiders. Wekelijks wordt aan de opdrachtgever een prototype gedemonstreerd en de volgende stappen besproken. Tussentijds kunnen via Zoom vragen gesteld worden.
 
 Maandag 23 mei is de Kickoff om 14.00 uur bij Fronteer in Amsterdam
-
-## Licentie
-
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
